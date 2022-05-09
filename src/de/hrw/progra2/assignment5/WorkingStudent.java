@@ -12,7 +12,7 @@ public class WorkingStudent extends RegularEmployee {
 
         float counter = 0.0f;
 
-        for (float labourHour : labourHours) {
+        for (float labourHour : this.getLabourHours()) {
 
             if (labourHour > 8){
                 return false;

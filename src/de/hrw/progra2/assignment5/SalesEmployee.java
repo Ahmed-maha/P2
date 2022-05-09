@@ -11,7 +11,7 @@ public class SalesEmployee extends RegularEmployee {
 
         float counter = 0.0f;
 
-        for (float labourHour : labourHours) {
+        for (float labourHour : this.getLabourHours()) {
 
             counter += labourHour;
 
@@ -19,8 +19,6 @@ public class SalesEmployee extends RegularEmployee {
                 return false;
             }
         }
-
-        // das hier ist ein test
 
         return true;
 
