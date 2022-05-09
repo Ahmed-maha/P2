@@ -21,4 +21,7 @@ public abstract class Employee {
     public float[] getLabourHours() {
         return labourHours;
     }
+
+    //testtest
+
 }
