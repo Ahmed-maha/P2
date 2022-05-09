@@ -20,6 +20,8 @@ public class SalesEmployee extends RegularEmployee {
             }
         }
 
+        // das hier ist ein test
+
         return true;
 
     }
