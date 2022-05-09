@@ -9,7 +9,7 @@ public class StaffUtil {
         float counter = 0.0f;
 
         for (Employee employee : employees) {
-            for (float labourHour : employee.labourHours) {
+            for (float labourHour : employee.getLabourHours()) {
                 counter += labourHour;
             }
         }

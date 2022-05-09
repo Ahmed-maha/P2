@@ -27,7 +27,7 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
 
         float counter = 0.0f;
 
-        for (float labourHour : labourHours) {
+        for (float labourHour : this.getLabourHours()) {
             counter += labourHour;
         }
 
