@@ -2,8 +2,8 @@ package de.hrw.progra2.assignment5;
 
 public class SalesEmployee extends RegularEmployee {
 
-    public SalesEmployee(float salary, int bonus) {
-        super(20, salary, bonus);
+    public SalesEmployee(String name, float mo, float tu, float we, float th, float fr, float salary, int bonus) {
+        super(name, mo, tu, we, th, fr, 20, salary, bonus);
     }
 
     @Override

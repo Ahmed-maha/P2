@@ -7,7 +7,8 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
     private int bonus;
 
 
-    public RegularEmployee(int vacation, float salary, int bonus) {
+    public RegularEmployee(String name, float mo, float tu, float we, float th, float fr, int vacation, float salary, int bonus) {
+        super(name,mo, tu, we, th, fr);
         this.vacation = vacation;
         this.salary = salary;
         this.bonus = bonus;
