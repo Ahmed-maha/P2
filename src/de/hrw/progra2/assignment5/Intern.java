@@ -7,7 +7,7 @@ public class Intern {
 
         for (float labourHour : labourHours) {
             counter += labourHour;
-        } //kurzer test
+        } //kurzer test test
     }
 
 
