@@ -7,6 +7,21 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
     private int bonus;
 
 
+    public RegularEmployee(int vacation, float salary, int bonus) {
+        this.vacation = vacation;
+        this.salary = salary;
+        this.bonus = bonus;
+    }
+
+    public RegularEmployee(float salary, int bonus) {
+        this.salary = salary;
+        this.bonus = bonus;
+    }
+
+    public RegularEmployee(int vacation) {
+        this(0.0f, 0);
+        this.vacation = vacation;
+    }
 
     public boolean isFulltimeEmployee() {
 
