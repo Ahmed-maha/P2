@@ -2,7 +2,7 @@ package de.hrw.progra2.assignment5;
 
 public abstract class RegularEmployee extends Employee implements CheckLabourHours, IsBoundToHourLimitation{
 
-    private int vacation;
+    private final int vacation;
     private float salary;
     private int bonus;
 
@@ -13,14 +13,24 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
         this.bonus = bonus;
     }
 
-    public RegularEmployee(float salary, int bonus) {
-        this.salary = salary;
-        this.bonus = bonus;
+    public int getVacation() {
+        return vacation;
     }
 
-    public RegularEmployee(int vacation) {
-        this(0.0f, 0);
-        this.vacation = vacation;
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
     }
 
     public boolean isFulltimeEmployee() {
@@ -35,6 +45,7 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
 
     }
 
+    @Override
     public String returnLabourHourWarning(){
         if (validLabourHours()) {
             return "Arbeitsstunden gültig";

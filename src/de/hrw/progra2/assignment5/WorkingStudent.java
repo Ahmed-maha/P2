@@ -3,8 +3,8 @@ package de.hrw.progra2.assignment5;
 public class WorkingStudent extends RegularEmployee {
 
 
-    public WorkingStudent() {
-        super(18);
+    public WorkingStudent(float salary, int bonus) {
+        super(18, salary, bonus);
     }
 
     @Override

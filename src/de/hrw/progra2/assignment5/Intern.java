@@ -2,8 +2,8 @@ package de.hrw.progra2.assignment5;
 
 public class Intern extends RegularEmployee{
 
-    public Intern() {
-        super(0);
+    public Intern(float salary, int bonus) {
+        super(0, salary, bonus);
     }
 
     @Override
