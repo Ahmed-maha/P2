@@ -30,7 +30,7 @@ public abstract class ContractEmployee extends Employee {
 
     @Override
     public String toString() {
-        return  super.toString() +
+        return super.toString() +
                 ", payPerHour=" + payPerHour;
     }
 }

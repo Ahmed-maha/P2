@@ -7,7 +7,7 @@ public class SalesEmployee extends RegularEmployee {
     }
 
     @Override
-    public boolean validLabourHours(){
+    public boolean validLabourHours() {
 
         float counter = 0.0f;
 
@@ -26,7 +26,7 @@ public class SalesEmployee extends RegularEmployee {
 
     @Override
     public String toString() {
-        return "SalesEmployee{" + super.toString() +  "}";
+        return "SalesEmployee{" + super.toString() + "}";
     }
 
 }

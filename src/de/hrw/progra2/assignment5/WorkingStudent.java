@@ -8,13 +8,13 @@ public class WorkingStudent extends RegularEmployee {
     }
 
     @Override
-    public boolean validLabourHours(){
+    public boolean validLabourHours() {
 
         float counter = 0.0f;
 
         for (float labourHour : this.getLabourHours()) {
 
-            if (labourHour > 8){
+            if (labourHour > 8) {
                 return false;
             }
 
@@ -32,7 +32,7 @@ public class WorkingStudent extends RegularEmployee {
 
     @Override
     public String toString() {
-        return "WorkingStudent{" + super.toString() +  "}";
+        return "WorkingStudent{" + super.toString() + "}";
     }
 
 }

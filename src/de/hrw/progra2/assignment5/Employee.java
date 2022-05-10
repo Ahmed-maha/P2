@@ -31,7 +31,7 @@ public abstract class Employee {
 
     @Override
     public String toString() {
-        return  "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", labourHours=" + Arrays.toString(labourHours);
     }
 }
