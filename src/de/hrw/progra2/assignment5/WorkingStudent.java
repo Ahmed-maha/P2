@@ -29,4 +29,10 @@ public class WorkingStudent extends RegularEmployee {
         return true;
 
     }
+
+    @Override
+    public String toString() {
+        return "WorkingStudent{" + super.toString() +  "}";
+    }
+
 }

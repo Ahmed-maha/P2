@@ -1,5 +1,7 @@
 package de.hrw.progra2.assignment5;
 
+import java.util.Arrays;
+
 public abstract class Employee {
 
     private String name;
@@ -27,4 +29,9 @@ public abstract class Employee {
         return labourHours;
     }
 
+    @Override
+    public String toString() {
+        return  "name='" + name + '\'' +
+                ", labourHours=" + Arrays.toString(labourHours);
+    }
 }

@@ -25,4 +25,18 @@ public class Freelancer extends ContractEmployee {
     public boolean tradeRegulationSigned(){
         return this.tradeRegulation;
     }
+
+    @Override
+    public String toString() {
+
+        if (this instanceof Tradesmen){
+            return  super.toString() +
+                    ", tradeRegulation=" + tradeRegulation;
+        } else {
+            return  "Freelancer{" +
+                    super.toString() +
+                    ", tradeRegulation=" + tradeRegulation +
+                    "}";
+        }
+    }
 }

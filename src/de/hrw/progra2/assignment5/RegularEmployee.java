@@ -55,6 +55,12 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
         }
     }
 
-
+    @Override
+    public String toString() {
+        return  super.toString() +
+                ", vacation=" + vacation +
+                ", salary=" + salary +
+                ", bonus=" + bonus;
+    }
 
 }

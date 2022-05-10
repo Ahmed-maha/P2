@@ -23,4 +23,10 @@ public class SalesEmployee extends RegularEmployee {
         return true;
 
     }
+
+    @Override
+    public String toString() {
+        return "SalesEmployee{" + super.toString() +  "}";
+    }
+
 }

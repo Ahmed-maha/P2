@@ -28,4 +28,9 @@ public abstract class ContractEmployee extends Employee {
         return counter * payPerHour;
     }
 
+    @Override
+    public String toString() {
+        return  super.toString() +
+                ", payPerHour=" + payPerHour;
+    }
 }

@@ -22,4 +22,8 @@ public class Intern extends RegularEmployee{
 
     }
 
+    @Override
+    public String toString() {
+        return "Intern{" + super.toString() +  "}";
+    }
 }

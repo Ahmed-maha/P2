@@ -15,5 +15,9 @@ public class Tradesmen extends Freelancer{
         }
     }
 
+    @Override
+    public String toString() {
+        return "Tradesmen{" + super.toString() +  "}";
+    }
 
 }
