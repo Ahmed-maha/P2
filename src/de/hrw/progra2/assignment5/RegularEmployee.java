@@ -1,26 +1,37 @@
 package de.hrw.progra2.assignment5;
 
-public abstract class RegularEmployee extends Employee implements CheckLabourHours, IsBoundToHourLimitation{
+public abstract class RegularEmployee extends Employee implements CheckLabourHours, IsBoundToHourLimitation {
 
-    private int vacation;
+    private final int vacation;
     private float salary;
     private int bonus;
 
 
-    public RegularEmployee(int vacation, float salary, int bonus) {
+    public RegularEmployee(String name, float mo, float tu, float we, float th, float fr, int vacation, float salary, int bonus) {
+        super(name, mo, tu, we, th, fr);
         this.vacation = vacation;
         this.salary = salary;
         this.bonus = bonus;
     }
 
-    public RegularEmployee(float salary, int bonus) {
-        this.salary = salary;
-        this.bonus = bonus;
+    public int getVacation() {
+        return vacation;
     }
 
-    public RegularEmployee(int vacation) {
-        this(0.0f, 0);
-        this.vacation = vacation;
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
     }
 
     public boolean isFulltimeEmployee() {
@@ -35,7 +46,8 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
 
     }
 
-    public String returnLabourHourWarning(){
+    @Override
+    public String returnLabourHourWarning() {
         if (validLabourHours()) {
             return "Arbeitsstunden gültig";
         } else {
@@ -43,6 +55,12 @@ public abstract class RegularEmployee extends Employee implements CheckLabourHou
         }
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", vacation=" + vacation +
+                ", salary=" + salary +
+                ", bonus=" + bonus;
+    }
 
 }

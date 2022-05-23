@@ -2,12 +2,12 @@ package de.hrw.progra2.assignment5;
 
 public class SalesEmployee extends RegularEmployee {
 
-    public SalesEmployee() {
-        super(20);
+    public SalesEmployee(String name, float mo, float tu, float we, float th, float fr, float salary, int bonus) {
+        super(name, mo, tu, we, th, fr, 20, salary, bonus);
     }
 
     @Override
-    public boolean validLabourHours(){
+    public boolean validLabourHours() {
 
         float counter = 0.0f;
 
@@ -23,4 +23,10 @@ public class SalesEmployee extends RegularEmployee {
         return true;
 
     }
+
+    @Override
+    public String toString() {
+        return "SalesEmployee{" + super.toString() + "}";
+    }
+
 }
